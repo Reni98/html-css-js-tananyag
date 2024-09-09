@@ -1,0 +1,42 @@
+A HTML szemantikus és nem szemantikus elemek csoportosítása a funkciójuk és jelentésük alapján történik. A szemantikus elemek azt jelentik, hogy a HTML elem magában hordozza a jelentését (szemantikáját), míg a nem szemantikus elemek inkább a megjelenésről vagy az elrendezésről szólnak.
+
+Szemantikus elemek:
+Ezek az elemek leírják a tartalom jelentését, és segítik a keresőmotorokat, képernyőolvasókat, valamint a böngészőket abban, hogy megértsék a dokumentum szerkezetét.
+
+Strukturális szemantikus elemek:
+<header>: Fejléc szakasz.
+<nav>: Navigációs menü.
+<main>: Fő tartalom.
+<article>: Független cikk vagy bejegyzés.
+<section>: Tartalomcsoportosító szakasz.
+<footer>: Lábjegyzet.
+<aside>: Oldalsó tartalom, ami nem kapcsolódik közvetlenül a fő tartalomhoz.
+
+Tartalmi szemantikus elemek:
+<h1>-<h6>: Címsorok.
+<p>: Bekezdés.
+<blockquote>: Blokk idézet.
+<q>: Inline idézet.
+<address>: Cím információk.
+<abbr>: Rövidítések és mozaikszavak.
+<strong>: Fontos, hangsúlyos szöveg (általában félkövér).
+<em>: Hangsúlyozott szöveg (általában dőlt).
+<mark>: Kiemelt szöveg (általában sárga háttér).
+<del>: Törölt szöveg (áthúzott).
+<ins>: Beszúrt szöveg (aláhúzott).
+<small>: Kisebb szöveg.
+<sup>: Felső index.
+<sub>: Alsó index.
+
+Nem szemantikus elemek:
+Ezek az elemek nem hordoznak szemantikai jelentést, és általában a megjelenésről vagy az elrendezésről szólnak. Nincs külön jelentésük, a megjelenítésük CSS-ben történik.
+
+Nem szemantikus elemek:
+<div>: Blokkszintű semleges konténer, amelyet gyakran elrendezési célokra használunk.
+<span>: Inline semleges konténer, kisebb szövegek formázására.
+<b>: Félkövér szöveg formázására használjuk, de nincs szemantikai jelentése.
+<i>: Dőlt szöveg formázására, de nincs szemantikai jelentése.
+<br>: Sortörés, ami nem szemantikus, inkább vizuális elrendezést biztosít.
+
+<hr>: Vízszintes vonal, ami tartalmakat választ el vizuálisan, de CSS-ben gyakrabban használjuk az elválasztásokat.
+A szemantikus elemek használata javítja a hozzáférhetőséget és keresőoptimalizálást (SEO), míg a nem szemantikus elemeket általában CSS vagy JavaScript segítségével stílusozzuk vagy funkciókkal látjuk el.

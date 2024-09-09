@@ -1,0 +1,30 @@
+Blokkszintű elemek (Block-level elements)
+<div> - Általános konténer elem, amelyet más elemek csoportosítására és stílusozására használunk.
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6> - Címsorok különböző szintjei.
+<p> - Bekezdés.
+<ul> - Rendezetlen lista.
+<ol> - Rendezett lista.
+<li> - Listaelem.
+<table> - Táblázat.
+<form> - Űrlap.
+<header> - Fejléc szakasz.
+<footer> - Lábléc szakasz.
+<section> - Szakasz.
+<article> - Cikk.
+<nav> - Navigációs menü.
+
+Inline elemek (Inline-level elements)
+<span> - Általános inline konténer, amelyet stílusok alkalmazására vagy a szöveg részének kiemelésére használunk.
+<a> - Hiperlink.
+<strong> - Kiemelés, amely általában félkövér szöveget eredményez.
+<em> - Kiemelés, amely általában dőlt szöveget eredményez.
+<img> - Kép beillesztése.
+<br> - Sorvége.
+<code> - Kód részlet.
+<abbr> - Rövidítés.
+<cite> - Forrás vagy hivatkozás.
+<b> - Félkövér szöveg (a <strong>-tól eltérően nem hordoz jelentést).
+<i> - Dőlt szöveg (a <em>-tól eltérően nem hordoz jelentést).
+<mark> - Kiemelt szöveg.
+
+Ez a lista nem teljes, de bemutatja a leggyakrabban használt blokk és inline elemeket. Az elemek használata a HTML struktúráját és stílusát alapvetően befolyásolja, ezért fontos tisztában lenni azzal, hogy melyik típusú elemet mikor és hogyan alkalmazzuk.

@@ -1,0 +1,253 @@
+<!-- Magyarázat
+<!DOCTYPE html>: Ez a sor jelzi, hogy HTML5 verziójú dokumentumról van szó.Az <!DOCTYPE> deklaráció nélkülözhetetlen a modern böngészők számára, hogy a dokumentumot helyesen értelmezzék.
+<html lang="hu">: Ez az elem kezdi a HTML dokumentumot, és a lang="hu" attribútum jelzi, hogy a dokumentum nyelve magyar.     Különböző értéket lehet megadni az atributumok számára.
+<head>: Ez a rész tartalmazza a dokumentum meta-információit.A meta adatok információk az oldal megjelenítéséhez, ami nem kerül megjelenítésre az oldalon.
+<meta charset="UTF-8">: Beállítja a dokumentum karakterkódolását UTF-8-ra, ami a legtöbb nyelv karaktereit támogatja.
+<title>Egyszerű HTML oldal</title>: Ez az elem határozza meg a böngésző címsorában megjelenő címet.
+<body>: Ez a rész tartalmazza a dokumentum látható tartalmát.
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fogalmak</title>
+</head>
+<body>
+    <!--  Több címsor egyszerre Emmet segítségével
+
+    Írd be: h1{Címsor 1}h2{Címsor 2}h3{Címsor 3}+h4{Címsor 4}h5{Címsor 5}h6{Címsor 6}
+    Nyomd meg a Tab billentyűt. -->
+
+    <!-- <h1></h1> Ez egy első szintű címsor, amely a főcímet jelzi. Csak egy <h1> lehet, ami a dokumentum főcíme, míg a többi címsorszint (h2-h6) többször is használható. -->
+    <h1>Ez egy proba szöveg</h1>
+    <!-- Alcímekből bármennyi lehet -->
+    <h2>Ez egy proba szöveg</h2>
+    <h3>Ez egy proba szöveg</h3>
+    <h4>Ez egy proba szöveg</h4>
+    <h5>Ez egy proba szöveg</h5>
+    <h6>Ez egy proba szöveg</h6>
+
+    
+    <!-- Minden HTML elemnek van egy alapértelmezett stílusa, anélkül,hogy bármilyen css-t hozzárendelnénk. 
+         Minden böngészőnek van egy alapértelmezett stílusbeállítása-->
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti culpa iure quod vero sequi, consequatur eligendi ducimus officia architecto voluptatibus facilis eaque! Atque voluptates dolor repudiandae ad nulla autem accusamus.</p> 
+    <!-- <p></p>: Ez egy bekezdés, amely szöveget tartalmaz. -->
+
+     <!-- A Lorem kitöltő szöveg  Lorem20(20 szavas lesz) Lorem20*4(4*megszorozzúk a 20 szavas szövegünk.)-->
+    
+     <!-- Vannak egy tagú és kéttagú elemek -->
+      <!-- Egytagúak -->
+    <hr>
+    <!-- Vonalat készít ami segíti a tartalmakat elválasztani egymástól, viszont ezt már nem használjuk, hanem css-ben oldjuk meg. -->
+    <br>
+    <!-- Tulajdonképpen megtöri a bekezdéseket, több szünet lesz.  -->
+     <!-- Gyakorlatban ezt a kettő tag-et nem használjuk. Css-ban oldjuk meg. -->
+
+     <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+      <!-- Formázás -->
+       <b>Szöveg</b>
+       <br>
+       <!-- Kivastagítja a szövegrészt, félkövér lesz a szöveg. -->
+        <strong>Másik szöveg szemantikus elem használatával.</strong>
+        <!-- Itt is félkövér lesz, viszont ebben az esetben nem mondtuk meg konkrétan, hogy legyen félkövér, itt Csak
+        azt monduk fontos rész, szemantikailag adtuk meg. A megjelenítés adtól függ mi van beállítva a böngészőnél. -->
+
+        <br>
+        <i>Dölt szöveg</i>
+        <br>
+        <!-- Dölt lesz a szöveg rész. Nem tudom mennyire fontos, nincs szemantikai jelentése. -->
+         <em>Dölt szöveg szemantikus elem használatával.</em>
+         <!-- Szeretném kihangsúlyozni de a böngészőre hagyom, hogy hogyan. A böngésző úgy interpretálta, hogy dölt legyen. -->
+          <br>
+         <mark>Szöveg</mark>
+         <!-- Kisárgítja a szöveg részt. -->
+
+         <!-- Ezek az elemek azt adják meg, hogy néznek ki az alapértelmezett stílusa a tagek-nek és a böngésző hogyan értelmezi. -->
+
+         <small>Kicsinyített szöveg.</small>
+         <br>
+         <!-- Hogyha kicsinyíteni szeretnék egy szöveg részt. -->
+          <del>Áthúzott szövegrész.</del>
+          <br>
+          <!-- Szöveg áthúzásra használjuk -->
+          <ins>Aláhúzott szövegrész.</ins>
+          <br>
+          <!-- Beírni szeretnék a szövegbe újabb szövegrészeket. A böngésző dönti el, de szemantikusan közlöm vele. -->
+
+          <!-- Gyakrabban használt elemek -->
+           20<sup>2</sup>
+           <!-- Felső index -->
+            <br>
+            20<sub>2</sub>
+            <!-- Alsó index -->
+             <br>
+             <abbr title="Python">Py</abbr>
+             <!-- Rövidítések és mozaikszavak megjelölésére szolgál. A célja, hogy egy rövidítéshez kapcsolódó teljes kifejezést, vagy annak magyarázatát tegye elérhetővé a böngészők, keresőmotorok és képernyőolvasók számára -->
+             <br>
+             <address>
+                Visit us at:<br>
+                Example.com<br>
+                Box 564, Disneyland<br>
+                USA
+             </address>
+             <!-- Szövegfelolvasó tudni fogja, ez egy címtipusú szöveg. Külön megjelenítési információt tartalmaz a böngésző számára. -->
+
+             <q>Ez egy idézet.</q>
+             <!-- A böngésző tudja, hogy idéztünk. -->
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dicta natus, ipsum voluptatibus quo libero molestias nostrum et vero rem eos, voluptate ex dolores voluptatem dolor! Fuga dicta mollitia id?
+              </blockquote>
+              <!-- Blokk szintű idézet. -->
+               <span>Ez a szöveg span tag-ek között van.</span>
+               <!-- Egyszerű semleges konténer elem, hasznos a webfejlesztésben, kisebb szövegek csoportosítására. Formázásra használjuk. -->
+            <br>
+
+               <a href="https://www.w3schools.com/" target="_blank">w3schools</a>
+               <!-- A <a> elem hivatkozást (linket) hoz létre, amely az adott URL-re navigál. -->
+                <!-- A "target='_blank'" attribútum használatával a link egy  új lapon fog megnyílni. -->
+                <nav>
+                    <a href="#about">Rólunk</a>
+                    <!-- A <a href="#about"> elem könyvjelzőként működik, amely az oldal egy adott részéhez (a 'Rólunk' szakaszhoz) ugrik. -->
+                </nav>
+                <h2 id="about">Rólunk</h2>
+                <!-- Az <h2 id="about"> elem egy egyedi azonosítót kap ('about'), amelyre más elemek (például egy link) hivatkozhatnak az oldalon belüli navigáció érdekében. -->
+
+                <img src="html.png" style="width: 300px;" alt="">
+                <!-- Kép elhelyezése az oldalon -->
+                <!-- A kép szélességét is majd css-ben fogjuk megadni. -->
+
+                <figure>
+                    <!-- A figure használatát alkalmazzuk, bármely média tartalom esetében, amelyhez leírás vagy magyarázat tartozik, önálló egységként is értelmezhető. -->
+                    <img src="html.png" style="width: 300px;" alt="">
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium praesentium voluptatum accusantium maxime eveniet consequuntur laboriosam illum delectus atque, ipsa, quod ut molestias. Quidem at odio voluptas enim eveniet vel!</figcaption>
+                    <!-- figcaption a leírást tartalmazza. -->
+                </figure>
+
+                <table>
+                    <!-- A <caption> elem egy HTML táblázathoz tartozó feliratot jelenít meg, és a táblázat tartalmát összefoglaló címet adhat neki. -->
+                    <caption>
+                        Táblázat címe
+                    </caption>
+                    <!-- A <colgroup> elem a HTML-ben egy táblázat oszlopait csoportosítja, és lehetővé teszi ezek formázását. -->
+                    <colgroup>
+                        <col span="1" style="background-color: lightblue;">
+                        <col span="2" style="background-color: lightcoral">
+
+                    </colgroup>
+                    <tr>
+                        <th>Autó Márka</th>
+                        <th>Ár</th>
+                        <th>Db</th>
+                    </tr>
+                    <tr>
+                        <td>Suzuki</td>
+                        <td>1000000Ft</td>
+                        <td>20db</td>
+                    </tr>
+                    <tr>
+                        <td>Suzuki</td>
+                        <td>1000000Ft</td>
+                        <td>20db</td>
+                    </tr>
+                    <tr>
+                        <td>Suzuki</td>
+                        <td>1000000Ft</td>
+                        <td>20db</td>
+                    </tr>
+                </table>
+                <!-- Amikor több cellát szeretnénk vertikálisan összeolvasztani: <td rowspan="2"></td> -->
+                 <!-- Horizontális összeolvasztás <td colspan="2"></td> -->
+
+                 <!-- Rendezetlen Lista (<ul>)
+        A rendezetlen lista (<ul>) olyan lista, amelynek elemei nincsenek számozva vagy betűzve. Ehelyett az elemek előtt általában egy felsorolásjel (pötty vagy kör) jelenik meg. létre.
+        Példa: -->
+
+                 <h1>Számozatlan lista</h1>
+                 <ul>
+                     <li>Első elem</li>
+                     <li>Második elem</li>
+                     <li>Harmadik elem</li>
+                 </ul>
+
+                   <!-- Rendezett Lista (<ol>)
+    Leírás: A rendezett lista (<ol>) olyan lista, amelynek elemei számozva vagy betűzve vannak. A böngésző automatikusan beszámozza az elemeket.
+    Elemek: A lista elemeit a <li> tag segítségével hozzuk létre. -->
+    
+        <h1>Számozott Lista</h1>
+        <ol>
+            <li>Első elem</li>
+            <li>Második elem</li>
+            <li>Harmadik elem</li>
+        </ol>
+    
+    
+    
+    <!-- Leíró Lista (<dl>)
+        Leírás: A leíró lista (<dl>) olyan lista, amelyben kifejezések és azok leírásai szerepelnek. Minden kifejezést egy <dt> (leíró címke) és minden leírást egy <dd> (leírás definíció) tag jelöl.
+        Elemek: A kifejezéseket a <dt>, a leírásokat pedig a <dd> tag segítségével hozzuk létre.
+        Példa: -->
+    
+        
+        <h1>Leíró Lista</h1>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language - A weboldalak leíró nyelve.</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets - A weboldalak stílusának meghatározására szolgál.</dd>
+            <dt>JavaScript</dt>
+            <dd>A weboldalak interaktív elemeinek létrehozására használt programozási nyelv.</dd>
+
+
+            <div></div> 
+            <!-- A <div> egy blokkszintű elem, ami azt jelenti, hogy teljes szélességben jelenik meg, és új sorba tör.
+                Mivel nem hordoz szemantikai jelentést (ellentétben például a <header>, <article>, <section> elemekkel), általában arra használjuk, hogy struktúrálisan elkülönítsünk egy részt a weboldalon, és stílusokat alkalmazzunk rá CSS segítségével. -->
+
+
+                    <!-- Blok elemek -->
+                    <!-- A blokkszintű elemek olyan HTML elemek, amelyek mindig új sort kezdenek, és a rendelkezésre álló teljes szélességet kitöltik. Ezek az elemek "blokkokat" képeznek a weboldalon, így a következő elem mindig új sorban jelenik meg alatta.
+        -->
+                    <!-- Inline elemek -->
+        <!-- Az inline elemek nem kezdenek új sort, és csak a szükséges szélességet foglalják el a tartalmuk számára. Ezek az elemek a szöveg közé ágyazódhatnak, és egymás mellett jelenhetnek meg. -->
+
+        <img src="layout.jpg" style="width: 400px;" alt="">
+
+        <!-- <header> – Az oldal tetején található, általában a weboldal logóját, főcímét, és navigációs menüjét tartalmazza.
+            <nav> – Navigációs elem, amely a weboldal fő menüjét tartalmazza.
+            <main> - Főtartalom itt van
+            <section> – Általában a weboldal fő tartalmi blokkjait osztja fel, itt találhatók a különböző témájú részek. A <div> elemhez hasonló nincs szemantikus tartalma.
+            <article> – Független cikkek vagy egységek, például egy blogbejegyzés vagy hír.
+            <aside> – Olyan tartalom, amely kiegészíti a fő részt, gyakran oldalsávként használják.
+            <footer> – Az oldal alján található, amely általában kapcsolatfelvételi információkat, jogi megjegyzéseket, vagy egyéb hivatkozásokat tartalmaz. -->
+
+                <header><h1>Főcim</h1></header>
+                <nav>Navigációs menü</nav>
+                <main>
+                    Weboldal lényege,tartalma
+                    <section>
+                        <article>
+                            Ami önnálóan is használható.
+                        </article>
+                    </section>
+                        <aside>Mellékes tartalom</aside>
+                        <section>2</section>
+                        <section>3</section>
+                    
+                </main>
+                <footer>Lábléc</footer>
+
+
+                <h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+</body>
+</html>
