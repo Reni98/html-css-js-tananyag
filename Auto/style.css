@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    font-family: "Source Code Pro", monospace;
+}
+
+body {
+    background-color: #333;
+    color: #ffff;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.popular {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kepek {
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+.imglogo {
+    width: 150px;
+    border-radius: 60%;
+}
+
+span {
+    color: red;
+}
+
+address {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
