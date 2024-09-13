@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #333;
+    color: #ffff;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    text-align: center;    
+}
+
+ul{
+    list-style: none;     
+}
+
+li{
+    display: inline-block;   
+}
+
+nav a{
+   margin: 15px;
+   text-decoration: none;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+nav a:hover{
+    background-color: lightblue;
+    color: #333;
+}
+
+.popular{
+    text-align: center;
+}
+
+.kepek{
+    background-color: #dfdfdf;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 40px;
+    color: #333;
+    border: 2px solid #5b5a5a ;
+    box-shadow: 0 4px 8px 0 rgba(35, 34, 34, 0.2);
+}
+
+.kepek:hover{
+    box-shadow: 0 8px 16px 0 rgba(182, 181, 181, 0.5);
+}
+
+.popularimg{
+    width: 300px;
+}
+
+.about{
+    text-align: center;
+}
+.logo{
+    border-radius: 150px;
+}
+
+.abouttext{
+    margin: 20px 150px 20px 150px ;
+}
+
+.contact{
+    text-align: center;
+    margin: 50px 0 0 0;
+    
+}
+
+footer{
+    text-align: center;
+    background-color: #5b5a5a;
+    padding: 5px;
+}
+
+span{
+    color: blue;
+    font-style: italic;
+}
+
+.turakep{
+    float: right;
+    width: 300px;
+    margin: 20px;
+}
+
+.trip{
+    margin: 50px 0 100px 0;
+    text-align: center;
+}
+
+.triptext{
+    margin: 50px 20px 20px 90px;
+}
