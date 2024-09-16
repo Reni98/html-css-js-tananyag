@@ -1,0 +1,56 @@
+p::first-letter{
+    font-size: 20px;
+    color: blue;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+ 
+  a {
+    text-decoration: none; /* Alapértelmezés szerint nincs aláhúzás */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Link, amire még nem kattintottak */
+a:link {
+    color: orange;
+}
+
+/* Már meglátogatott link */
+a:visited {
+    color: purple;
+}
+
+/* Link, amikor az egér fölötte van */
+a:hover {
+    color: green;
+    text-decoration: underline; /* Az egér fölé vitelekor megjelenik az aláhúzás */
+}
+
+/* Link, amikor aktívan kattintasz rá */
+a:active {
+    color: red;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: red;
+}

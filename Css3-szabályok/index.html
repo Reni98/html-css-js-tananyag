@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS3</title>
+</head>
+<body>
+    <!-- A CSS3 szabályokkal határozza meg, hogy a böngészőnek, hogyan kell megjelenítenie a böngészőnek a weblap tartalmát.
+    Minden szabály két részből áll: egy a kiválasztóból, amely meghatározza, hogy a szabály milyen elemekre vonatkozik, és egy
+    vagy több deklarációból, amely az alkalmazandó stílust határozza meg. -->
+
+    <!-- CSS3-szabályok formátuma:
+
+    kiválasztó {deklaráció; deklaráció;...} 
+
+    A következő formátumban kell megadnod a tulajdonságot és annak az értékét a deklarációban:
+    tulajdonság: érték    
+    -->
+   
+    <!-- Kíválasztók: 
+     Elemtípus: A szabály az összes megadott típusú elemre érvényes.
+     h1 {color: red;}
+     Ez a szabály azt biztosítja, hogy a böngésző a weblap minden h1 elemét piros betűszínnel jelenítse meg.
+     Ha több elemtípusra is ugyanazokat a stílusokat szeretnéd alkalmazni, felsorolhatod őket különálló szabályokban, vagy a kiválasztóban
+     is csoportba foglalhatod az elemeket, vesszővel elválasztva az elemneveket:
+     h1, p {color: red;}
+
+     id attribútum: A szabály a megadott id (azonosító) értékkel rendelkező konkrét elemre vonatkozik.
+     Ha egy id attribútumot szeretnél megadni kiválasztóként, írj egy kettős kereszt(#) jelet az azonosító név elé:
+     #kivalaszt {color: red;}
+     A szabályt úgy használhatod a HTML5-kódban, hogy egyszerűen alkalmazod az id attributumot arra az elemre, amelynek be kell állítanod
+     a stílusát:
+     <h1 id="kivalaszt">A kiválasztott elem.</h1>
+     A böngésző ezt a szabályt arra a konkrét elemre fogja alkalmazni, amelyhez az id attribútum értéke tartozik.
+
+     class attribútum: A szabály az összes megadott class(osztály) értékű elemre érvényes.
+     Ha egy olyan szabályt kell definiálnod, amely több elemre érvényes, de nem feltétlenül az összes elemre az adott típusból, 
+     használd a class attribútumot kiválasztoként.
+     .kivalaszt {color: red;}
+
+     Ezután egyszerűen alkalmazd ezt a class (osztály) attribútumot minden olyan elemre, amelynek a stílusát ezzel a szabállyal kell
+     beállítanod:
+
+     <h1 class="kivalaszt">A kiválasztott elem.</h1>
+     <p class="kivalaszt">Másik elem.</h1>
+    
+    Ha úgy döntesz, hogy egy szabályt csak az osztály egy konkrét elemtípusára kell alkalmaznod, a kiválasztóban megadhatod az
+    elemtípust az osztályérték előtt:
+    p.kivalaszt {color: red;}
+    
+    Ez a szabály csak a kivalaszt értékű class attribútummal rendelkező p elemekre lesz érvényes.
+     
+     
+     Pszeudoelem: A szabály egy elem egy meghatározott részére vonatkozik, például az első betűre (::first-letter) vagy az első sorra (::first-line).
+     Amikor egy elem teljes tartalma helyett az elem egy alszakaszára alkalmazunk stílusokat.
+    Ha pszeudoelemes szabályt szeretnél használni, dupla kettőspottal (::) választod el a szabályt a kiválasztótól, amelyre vonatkozik:
+     kiválasztó::pszeudoelem
+
+     Ha a szöveg bekezdéseinek első betűihez más stílust szeretnél beállítani, mint a szöveg többi részéhez, a first-letter 
+     pszeudoelem-kulccsszót használhatod:
+     p::first-letter {font-size: 20px;}
+     A first-letter pszeudoelem csak a p elem első betűjére illeszkedik.
+     
+     -->
+     <h1>Proba szöveg</h1>
+     <p class="kivalaszt">Másik proba szöveg</p>
+
+     <table>
+        <tr>
+            <th>Pszeudoelem</th>
+            <th>Leírás</th>
+        </tr>
+        <tr>
+            <td>after</td>
+            <td>Egy objektumot helyez a kiválasztott elem tartalma elé.</td>
+        </tr>
+        <tr>
+            <td>before</td>
+            <td>Egy objektumot helyez a kiválasztott elem tartalma mögé.</td>
+        </tr>
+        <tr>
+            <td>first-letter</td>
+            <td>A kiválasztott elem tartalmának első betűjére alkalmazza a szabályt.</td>
+        </tr>
+        <tr>
+            <td>first-line</td>
+            <td>A kiválasztott elem tartalmának első sorára alkalmazza a szabályt</td>
+        </tr>
+        <tr>
+            <td>selection</td>
+            <td>A weboldal látogatója által kijelölt tartalomra alkalmazza a szabályt</td>
+        </tr>
+     </table>
+    
+     <!-- Az after és befor elemeket leggyakrabban arra használják, hogy képeket helyezzenek el az elem tartalma előtt vagy után. -->
+
+    <!-- Pszeudoosztály: A szabály a meghatározott állapotú elemekre érvényes, például amikor az elemre kattintunk (:active) vagy fölé viszünk az egeret (:hover).
+     Olyan elemre alkalmazza a megadott stílusokat, amely egy adott állapotban van a weblapon. Az állapot arra vonatkozik, hogy az
+     elem hogyan viselkedik, például letiltott gombok, bepipált jelölőnégyzetek, vagy olyan beviteli mezők, amelyek a böngésző fókuszában vannak.
+
+     Ezeket a szabályokat gyakran alkalmazzák a weblapon lévő hiperszöveghivatkozásokra, hogy segítsenek a weboldal látógatóinak
+     azoknak a hivatkozásainak a megkülönböztetésében, amelyeket már meglátogattak.
+     Ezt négy pszeudoosztályos stílusszabály sorozatának használatával teheted meg:
+
+     link(hivatkozás): egy normál, nem meglátogatott hivatkozásra alkalmazza a szabályt.
+
+     visited: (meglátogatott): Egy olyan hivatkozásra alkalmazza a szabályt, amelyet a weboldal látogatója már meglátogatott.
+
+     hover (rámutatás): Akkor kell alkalmazza a szabályt, amikor a weboldal látogatója a hivatkozásra mutat az egérmutatóval.
+
+     active (aktív): Akkor alkalmazza a szabályr, amikor a weboldal látogatój a hivatkozásra kattint.
+
+     A pszeudo szabályok alkalmazásához kettősponttal kell elválasztanod azt a kiválasztótóol a szabálydefinicióban:
+        a: link {color: orange; }
+        a: visited {color: purple; }
+        a: hover {color: green;}
+        a: active {color: red; }
+
+        Mindezek a pszeudoosztályos szabályoka weblap összes anchor elemére érvényesek, és különböző színeket alkalmaznak a 
+        hiperhivatkozás szövegérer a hiperhivatkozás állapotától függően.
+
+        Rendkívül fontos, hogy az itt látható sorrendben add meg az anchor elemek pszeudoosztályos szabályait, különben nem fog működni!
+         A leírásban szereplő sorrend azért fontos, mert a CSS-ben a pszeudoosztályok egymásra hatnak, és ha nem megfelelő a sorrend, akkor felülírhatják egymást.
+
+          
+          -->
+
+          <h2>Link Pszeudoosztályok Példája</h2>
+    <p>
+        Kattints erre a <a href="https://www.w3schools.com/cssref/sel_active.php" target="_blank">linkre</a>, és figyeld meg a különböző színeket, attól függően, hogy még nem látogatott, meglátogatott, fölé viszed az egeret, vagy éppen kattintasz rá.
+    </p>
+
+    <!-- Hogyha az aláhúzást szeretnéd eltávolítani, amelyet a legtöbb böngésző alkalmaz a hiperszöveg-hivatkozásokra, használd a következő pszeudo osztályt:
+    text-decoration: none 
+
+    A pszeudoosztályos stílusszabályok közül sok (például a first-child vagy a last-child) az elemek Dokumentum Objektumbeli Modeldbeli (Document Object Model, DOM)helyét használja.
+
+    DOM-beli hely:
+A DOM-beli hely azt jelenti, hogy a böngésző hogyan értelmezi a HTML-t, és hogyan építi fel az oldalt. A pszeudoosztályok a HTML-fa szerkezetében elfoglalt helyük alapján határozzák meg, hogy mely elemekre alkalmazzák a szabályokat. Például az első és utolsó gyermek az adott szülő elem belső szerkezetében helyezkedik el, és ez alapján különböznek egymástól.
+    
+    -->
+
+    <table>
+        <thead>
+          <tr>
+            <th>Pseudoelem</th>
+            <th>Leírás</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>:active</td>
+            <td>A szabály akkor érvényes a hivatkozásokra, amikor a weboldal látogatója rákattint.</td>
+          </tr>
+          <tr>
+            <td>:checked</td>
+            <td>A szabály a beviteli jelölőnégyzetekre, amikor azok ki vannak pipálva.</td>
+          </tr>
+          <tr>
+            <td>:disabled</td>
+            <td>A szabály a bevitt elemekre vonatkozik, amelyek ki vannak tiltva.</td>
+          </tr>
+          <tr>
+            <td>:empty</td>
+            <td>A szabály azokra az elemekre vonatkozik, amelyeknek nincsenek gyermekeik.</td>
+          </tr>
+          <tr>
+            <td>:enabled</td>
+            <td>A szabály a beviteli elemekre vonatkozik, amelyek engedélyezve vannak.</td>
+          </tr>
+          <tr>
+            <td>:first-child</td>
+            <td>A szabály egy szülőelem első gyermekelemére érvényes.</td>
+          </tr>
+          <tr>
+            <td>:first-of-type</td>
+            <td>A szabály az első, a szülővel megegyező típusú gyermekelemekre vonatkozik.</td>
+          </tr>
+          <tr>
+            <td>:focus</td>
+            <td>A szabály azokra az elemekre vonatkozik, amelyek a felhasználó fókuszában vannak.</td>
+          </tr>
+          <tr>
+            <td>:hover</td>
+            <td>A szabály az egérmutatóval az elem fölé navigált elemekre érvényes.</td>
+          </tr>
+          <tr>
+            <td>:in-range</td>
+            <td>A szabály a megadott tartományba eső elemekre érvényes.</td>
+          </tr>
+          <tr>
+            <td>:invalid</td>
+            <td>A szabály azokra az elemekre vonatkozik, amelyek értéke érvénytelen.</td>
+          </tr>
+          <tr>
+            <td>:lang()</td>
+            <td>A szabály az összes olyan elemre érvényes, amely a megadott <code>lang</code> attribútummal rendelkezik.</td>
+          </tr>
+          <tr>
+            <td>:last-child</td>
+            <td>A szabály egy szülőelem utolsó gyermekére érvényes.</td>
+          </tr>
+          <tr>
+            <td>:last-of-type</td>
+            <td>A szabály az utolsó, a szülővel megegyező típusú gyermekelemekre vonatkozik.</td>
+          </tr>
+          <tr>
+            <td>:link</td>
+            <td>A szabály a nem látogatott hivatkozásokra vonatkozik.</td>
+          </tr>
+          <tr>
+            <td>:not()</td>
+            <td>A szabály az összes elemre érvényes, kivéve a megadott kiválasztóhoz tartozó elemeket.</td>
+          </tr>
+          <tr>
+            <td>:nth-child(n)</td>
+            <td>A szabály a szülőelem n-edik gyermekére érvényes.</td>
+          </tr>
+          <tr>
+            <td>:nth-last-child(n)</td>
+            <td>A szabály a szülőelem n-edik gyermekére vonatkozik, visszafelé számolva.</td>
+          </tr>
+          <tr>
+            <td>:nth-of-type(n)</td>
+            <td>A szabály az n-edik, a szülővel megegyező típusú gyermekelemekre vonatkozik.</td>
+          </tr>
+          <tr>
+            <td>:only-of-type</td>
+            <td>A szabály minden olyan elemre érvényes, amely egyetlen, a szülővel megegyező típusú elem.</td>
+          </tr>
+          <tr>
+            <td>:only-child</td>
+            <td>A szabály minden olyan elemre érvényes, amely az egyetlen gyermeke a szülőelemnek.</td>
+          </tr>
+          <tr>
+            <td>:optional</td>
+            <td>A szabály azokra a beviteli elemekre érvényes, amelyek nem rendelkeznek kötelező attribútummal.</td>
+          </tr>
+          <tr>
+            <td>:out-of-range</td>
+            <td>A szabály azokra az elemekre érvényes, amelyek kívül esnek a megadott tartományon.</td>
+          </tr>
+          <tr>
+            <td>:read-write</td>
+            <td>A szabály azokra az elemekre vonatkozik, amelyek írhatók és olvashatók.</td>
+          </tr>
+          <tr>
+            <td>:required</td>
+            <td>A szabály azokra az elemekre vonatkozik, amelyek kötelező attribútummal rendelkeznek.</td>
+          </tr>
+          <tr>
+            <td>:root</td>
+            <td>A szabály a dokumentum gyökérelemére vonatkozik.</td>
+          </tr>
+          <tr>
+            <td>:target</td>
+            <td>A szabály a megadott célpontra vonatkozik.</td>
+          </tr>
+          <tr>
+            <td>:valid</td>
+            <td>A szabály az érvényes értékkel rendelkező elemekre vonatkozik.</td>
+          </tr>
+          <tr>
+            <td>:visited</td>
+            <td>A szabály a már meglátogatott hivatkozásokra vonatkozik.</td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+     <!-- Univerzális szelektor (*): Ez a szelektor minden elemre vonatkozik a dokumentumban és globális stílusokat tud alkalmazni, például alapértelmezett margók eltávolítását vagy betűméret meghatározását.
+     Speciális szelektorok:Bonyolultabb szelektorok, mint például a gyermek szelektor (>), ami csak közvetlen gyerek elemekre vonatkozik, vagy a szomszédos testvér szelektor (+).  -->
+
+     <!-- ------------------------------------------------------------------------ -->
+      <!-- Stílusszabályok -->
+      <!-- Beágyazott stílusok: A stílustulajdonságokat a HTML5-elem nyitó cimkéjébe helyezheted el a style attribútummal:
+      <h1 style="color: red;">Kiválasztott elem</h1> -->
+
+      <!-- Belső stílusok: 
+       A <style> (stílus) címkével definiálhatod azokat a stílusokat, amelyek az egész dokumentumra érvényesek.
+        <style>
+            h1 {color: red; }
+        </style>
+       -->
+
+       <!-- Külső stílusok 
+        A stílus definíciókat elhelyezheted egy külső fájlban, majd beszúrhatod a <link> (hivatkozás) cimkét a HTML5-dokumentumba, hogy hívatkozz a külső stíluslapra.
+        <link rel="stylesheet" href="style.css">
+        -->
+
+        <!-- A Beágyazott stílusdefinicióknál el kell hagynod a szabály kiválasztó részét. Mivel a szabály csak arra az elemre vonatkozik, amelyben deklarálva van.
+         -->
+     
+         <!-- Ha a weblap ugyanazon elemére kettő vagy több szabály érvényes, akkor lép  életbe a CSS3 lépcsőzetessége. Konrét eljájár határozza meg, hogy a böngésző hogyan alkalmazza az egymással ütköző szabályokat az adott elemre. -->
+
+         <table>
+            
+                <tr>
+                    <th>Szabálytípus</th>
+                    <th>Leírás</th>
+                    <th>Prioritási szint</th>
+                </tr>
+            
+            
+                <tr>
+                    <td>Importance (Fontos)</td>
+                    <td>A szabályok tartalmazzák a <code>!important</code> tulajdonságot, és minden más szabály felülírnak</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Inline (Beágyazott)</td>
+                    <td>Az elemek nyitó címkéjében <code>style</code> attribútumban definiált szabályok</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Media (Média)</td>
+                    <td>Meghatározott médiatípushoz definiált szabályok</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>User defined (Felhasználó által definiált)</td>
+                    <td>A weboldal látogatója által a böngészőben definiált kisegítő lehetőségek</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Specific selector (Konkrét kiválasztó)</td>
+                    <td>Adott azonosítóra, osztályra, attribútumra, pseudosztályra hivatkozó kiválasztó</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Rule order (Szabályrendezés)</td>
+                    <td>Ha egy elemre több szabály érvényes, az utoljára deklarált szabály lesz a mérvadó</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Inheritance (Öröklődés)</td>
+                    <td>A weblap szülőelemeitől örökölt szabályok</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Internal (Belső)</td>
+                    <td>A belső stíluslapokon definiált szabályok</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>External (Külső)</td>
+                    <td>A külső stíluslapokon definiált szabályok</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Browser default</td>
+                    <td>A böngészőbe beépített alapértelmezett stílusok, a legalacsonyabb prioritás</td>
+                    <td>10</td>
+                </tr>
+        
+        </table>
+
+        <!-- CSS3 Lépcsőzetes Szabályok Magyarázata
+A CSS (Cascading Style Sheets) szabályainak alkalmazása során a böngészők egy lépcsőzetes rendszert használnak, amely meghatározza, hogy mely stílusok lépnek életbe, ha egy elemre több szabály is vonatkozik. A prioritási szintek fontosak a stílusok felülírásának megértésében, hiszen lehetőség van arra, hogy bizonyos szabályok felülírják a másokat. A CSS-ben számos tényező befolyásolja a szabályok érvényességét és az egyes szabályok közötti hierarchiát.
+
+1. !important szabály
+A legmagasabb prioritású szabály, amelyet az !important kulcsszóval jelölünk meg. Ha egy stílus ezzel van ellátva, minden más szabály felülírásra kerül, még akkor is, ha más szabályok később kerültek definiálásra. Azonban a túlzott használata nem ajánlott, mivel megnehezíti a stíluslapok karbantartását és átláthatóságát.
+
+2. Inline (Beágyazott) stílusok
+Ezeket közvetlenül az elem HTML kódjában, az adott elem style attribútumában adjuk meg. Ezek a szabályok az !important-on kívül minden más szabályt felülírnak.
+
+3. Media Queries (Médiakérdések)
+Ez a szabály lehetővé teszi, hogy különböző stílusokat alkalmazzunk különböző eszközökhöz (pl. mobil, tablet, desktop). Ezek a szabályok csak akkor lépnek érvénybe, ha a meghatározott médiumhoz vagy eszközhöz kapcsolódnak.
+
+4. Felhasználó által definiált szabályok
+Ezek a szabályok a felhasználó által beállított kisegítő lehetőségekből származnak a böngészőben. Például a látásproblémákkal küzdő felhasználók saját stílusokat állíthatnak be, hogy jobban olvashatóvá tegyék az oldalt.
+
+5. Specifikus kiválasztók
+A konkrét azonosítóval, osztállyal vagy pseudosztílussal (pl. :hover, :focus) ellátott szabályok nagyobb prioritást élveznek. Minél konkrétabb a kiválasztó, annál erősebb a szabály. Például egy azonosítóval (#id) rendelkező szabály erősebb, mint egy osztály (.class).
+
+6. Szabályrendezés (Rule order)
+Ha egy elemre több szabály vonatkozik, akkor az utoljára definiált szabály lesz érvényben, kivéve, ha egy korábbi szabály !important-tal van megjelölve.
+
+7. Öröklődés (Inheritance)
+Egyes CSS tulajdonságok automatikusan öröklődnek a szülőelemektől a gyermek elemekhez. Például a szöveg színe vagy betűtípusa öröklődik, hacsak nincs külön szabályozva.
+
+8. Belső (Internal) stíluslapok
+A belső stíluslapok az adott HTML dokumentum <head> szekciójában találhatóak, style tag-en belül. Ezek a szabályok felülírják a külső stíluslapokat, de nem olyan erősek, mint az inline szabályok.
+
+9. Külső (External) stíluslapok
+Ezeket a szabályokat egy külső CSS fájlban definiáljuk, amelyet a HTML dokumentumba hivatkozunk meg (pl. <link rel="stylesheet" href="style.css">). Ez a leggyakrabban használt módszer a stíluslapok kezelésére, mivel átláthatóbb és könnyebben karbantartható.
+
+10. Alapértelmezett böngésző stílusok
+A böngészők rendelkeznek saját alapértelmezett stílusaikkal. Például a bekezdések között van alapértelmezett térköz, a címek nagyobbak, stb. Ezek a legalacsonyabb prioritással bírnak, és minden felhasználói vagy CSS-ben meghatározott szabály felülírja őket. -->
+    
+</body>
+</html>
