@@ -1,0 +1,57 @@
+Title:Marvel témájú weboldal
+header,h1:Marvel Univerzum
+nav:
+Karakterek
+Filmek
+Képregények
+Kapcsolat
+
+section:karakterek
+h2:Marvel Karakterek
+p: A Marvel univerzuma híres a sok ikonikus hőséről, mint például <strong>Vasember</strong>, <strong>Thor</strong> és <strong>Amerika Kapitány</strong>. 
+Ezek a hősök nemcsak a képregények világában, hanem a filmvásznon is rendkívül népszerűek.
+figure:vasember kép
+Vasember - a tech-zseni hős
+
+
+section: filmek
+h2:Marvel Filmek
+p: A Marvel-filmek sikere az MCU (Marvel Cinematic Universe) indulásával kezdődött, amely a modern szuperhősfilmek forradalmát hozta. Az alábbi táblázat bemutat néhány népszerű filmet és azok bevételeit.
+table:
+caption:Marvel Filmek Bevételi Adatok
+Fejléc tartalma:
+	Film Cím
+	Megjelenés Éve
+	evétel (millió USD)
+
+	Avengers: Endgame
+	2019
+	2797
+
+	Spider-Man: No Way Home
+	2021
+	1921
+
+	Black Panther
+	2018
+	1347
+
+section:kepregenyek
+h2:Marvel Képregények
+p:A Marvel Comics több mint 80 éves történelme alatt több ezer képregényt jelentetett meg. Ezek közül néhány a világ legismertebb történetei közé tartozik.
+számozatlan listában:
+X-Men
+Spider-Man
+Fantastic Four
+Avengers
+
+section:kapcsolat
+h2:Kapcsolat
+p:Ha többet szeretnél tudni a Marvel világáról, látogass el a hivatalos weboldalra:https://www.marvel.com
+Marvel Hivatalos Oldala
+footer:Készítette: Marvel Fan &copy; 2024
+
+háttér szín:#141414
+piros: #e62429
+sárga: #f0c040
+betűstílus: Kode Mono
