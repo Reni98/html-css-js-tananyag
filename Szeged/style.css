@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+* {
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.headerimg {
+    width: 100%;
+    height: 550px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #f6b93b;
+    color: #2a5d84;
+    margin: 0;
+    padding: 5px;
+}
+
+nav.navlist {
+    text-align: center;
+    padding: 5px;
+}
+
+nav a {
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #f6b93b;
+    color: #2a5d84;
+    padding: 10px;
+
+}
+
+
+.navlist {
+    background-color: #2a5d84;
+    color: #f6b93b;
+
+}
+
+ul.navlist {
+    list-style-type: none;
+
+}
+
+li.navlist {
+    display: inline-block;
+}
+
+nav a {
+    color: #f6b93b;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+.latnivalok {
+    text-align: center;
+}
+
+.mainkep {
+    width: 500px;
+    border: 2px solid #2a5d84;
+    box-shadow: 0 6px 8px 4px rgba(8, 8, 8, 0.5);
+
+}
+
+.mainkep:hover {
+    opacity: 0.8;
+    transform: scale(0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.szegedidom {
+    color: #2a5d84;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    margin: 20px auto;
+    border: 1px solid #2a5d84;
+    border-collapse: collapse;
+
+}
+
+th {
+    background-color: #2a5d84;
+    color: white;
+}
+
+th,
+tr,
+td {
+    border: 1px solid #2a5d84;
+}
