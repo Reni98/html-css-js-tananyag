@@ -105,3 +105,52 @@ tr,
 td {
     border: 1px solid #2a5d84;
 }
+
+p.tortenelem {
+    text-align: justify;
+    margin: 20px;
+}
+
+span {
+    color: #2a5d84;
+    font-weight: bold;
+}
+
+.hiresszemelyek {
+    text-align: center;
+    margin: 20px auto;
+    background-color: #333;
+    color: #2a5d84;
+    width: 400px;
+    padding: 5px;
+    border: 2px solid #2a5d84;
+    border-radius: 20px;
+}
+
+.hires {
+    width: 250px;
+    border-radius: 200px;
+}
+
+.kapcsolat {
+    text-decoration: none;
+    color: #2a5d84;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.terkep {
+    display: block;
+    margin: 20px auto;
+}
+
+address {
+    text-align: center;
+}
+
+footer {
+    background-color: #2a5d84;
+    color: #f6b93b;
+    text-align: center;
+    padding: 5px;
+}
