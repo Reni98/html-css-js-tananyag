@@ -19,7 +19,7 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"><i class="bi bi-basket"></i> Webshop</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,11 +55,11 @@
 
       <div class="container">
         <div class="row mt-5">
-            <div class="col-4">
+            <div class="col-lg-4 mt-5 ">
                 <h1 class="display-4 text-info">Üdvözöljük!</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error eos voluptate, magnam odit molestiae labore ab corporis voluptatum ratione perferendis eveniet, unde doloribus, possimus provident. Minus obcaecati provident nisi distinctio!</p>
             </div>
-            <div class="col-8">
+            <div class="col-lg-8 mt-lg-5 mt-0">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -91,45 +91,45 @@
 
         <div class="row">
             <div class="col">
-                <h2 class="display-6 text-info">Top termékek</h2>
+                <h2 class="display-6 text-info mt-5">Top termékek</h2>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-lg-4">
                         <div class="card m-3">
                         <img src="kepek/kepek/card1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Kontroller</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           <div class="row">
-                            <div class="col"><a href="#" class="btn btn-dark">Megnézem</a></div>
-                            <div class="col text-end text-danger">
+                            <div class="col order-2 order-sm-1 "><a href="#" class="btn btn-dark">Megnézem</a></div>
+                            <div class="col order-1 order-sm-2 text-start text-sm-end text-danger mb-2 mb-sm-0">
                                 27 000Ft
                             </div>
                           </div>                          
                         </div>
                       </div>
                     </div>
-                    <div class="col"> 
+                    <div class="col-lg-4"> 
                         <div class="card m-3">
                         <img src="kepek/kepek/card2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Laptop</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           <div class="row">
-                            <div class="col"><a href="#" class="btn btn-dark">Megnézem</a></div>
-                            <div class="col text-end text-danger">
+                            <div class="col order-2 order-sm-1"><a href="#" class="btn btn-dark">Megnézem</a></div>
+                            <div class="col order-1 order-sm-2 text-start text-sm-end text-danger mb-2 mb-sm-0">
                                540 000Ft
                             </div>
                           </div>                          
                         </div>
                       </div></div>
-                    <div class="col"> <div class="card m-3">
+                    <div class="col-lg-4"> <div class="card m-3">
                         <img src="kepek/kepek/card3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Samsung</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           <div class="row">
-                            <div class="col"><a href="#" class="btn btn-dark">Megnézem</a></div>
-                            <div class="col text-end text-danger">
+                            <div class="col order-2 order-sm-1"><a href="#" class="btn btn-dark">Megnézem</a></div>
+                            <div class="col order-1 order-sm-2 text-start text-sm-end text-danger mb-2 mb-sm-0">
                                 160 000Ft
                             </div>
                           </div>                          
@@ -140,7 +140,7 @@
             </div>
         </div>
 
-        <div class="row my-5">
+        <div class="row my-5 d-none d-sm-block">
             <div class="container">
                 <img src="./kepek/kepek/banner.jpg" class="img-fluid" alt="">
             </div>
@@ -150,15 +150,16 @@
             <div class="col">
                 <h2 class="display-6 text-info">Kiemelt termékek</h2>
                 <div class="row">
-                    <div class="col">
-                        <div class="card m-3 h-100">
+                    <div class="col-lg-3 col-sm-6 mt-3 mt-lg-0">
+                        <div class="card  h-100">
                             <img src="kepek/kepek/card6.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Kontroller</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <div class="row">
-                                <div class="col"><a href="#" class="btn btn-dark">Megnézem</a></div>
-                                <div class="col text-end text-danger">
+                                <div class="col order-2 order-sm-1">
+                                  <a href="#" class="btn btn-dark">Megnézem</a></div>
+                                <div class="col order-1 order-sm-2 text-start text-sm-end text-danger mb-2 mb-sm-0"">
                                     27 000Ft
                                 </div>
                               </div>                          
@@ -168,15 +169,15 @@
                               </div>
                           </div>
                     </div>
-                    <div class="col">
-                        <div class="card m-3 h-100">
+                    <div class="col-lg-3 col-sm-6 mt-3 mt-lg-0">
+                        <div class="card  h-100">
                         <img src="kepek/kepek/card4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Monitor</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           <div class="row">
-                            <div class="col"><a href="#" class="btn btn-dark">Megnézem</a></div>
-                            <div class="col text-end text-danger">
+                            <div class="col order-2 order-sm-1"><a href="#" class="btn btn-dark">Megnézem</a></div>
+                            <div class="col order-1 order-sm-2 text-start text-sm-end text-danger mb-2 mb-sm-0"">
                                 27 000Ft
                             </div>
                           </div>                          
@@ -185,15 +186,15 @@
                             <a href="" class="text-decoration-none text-secondary small">Hangszóró</a>
                           </div>
                       </div></div>
-                    <div class="col">
-                        <div class="card m-3 h-100">
+                    <div class="col-lg-3 col-sm-6 mt-3 mt-lg-0">
+                        <div class="card  h-100">
                         <img src="kepek/kepek/card5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Kontroller</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           <div class="row">
-                            <div class="col"><a href="#" class="btn btn-dark">Megnézem</a></div>
-                            <div class="col text-end text-danger">
+                            <div class="col order-2 order-sm-1"><a href="#" class="btn btn-dark">Megnézem</a></div>
+                            <div class="col order-1 order-sm-2 text-start text-sm-end text-danger mb-2 mb-sm-0"">
                                 27 000Ft
                             </div>
                           </div>                          
@@ -202,14 +203,15 @@
                             <a href="" class="text-decoration-none text-secondary small">Hangszóró</a>
                           </div>
                       </div></div>
-                    <div class="col"><div class="card m-3 h-100">
+                    <div class="col-lg-3 col-sm-6 mt-3 mt-lg-0">
+                      <div class="card  h-100">
                         <img src="kepek/kepek/konzol.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Konzol</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           <div class="row">
-                            <div class="col"><a href="#" class="btn btn-dark">Megnézem</a></div>
-                            <div class="col text-end text-danger">
+                            <div class="col order-2 order-sm-1"><a href="#" class="btn btn-dark">Megnézem</a></div>
+                            <div class="col order-1 order-sm-2 text-start text-sm-end text-danger mb-2 mb-sm-0">
                                 27 000Ft
                             </div>
                           </div>                          
@@ -222,8 +224,78 @@
             </div>
         </div>
 
+
+        <div class="row">
+          <div class="col">
+            <h2 class="display-6 text-info mt-5">Információk</h2>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <div class="card m-3 p-3">
+                <div class="card-body text-center">
+                  <i class="bi bi-truck display-6 mb-3 text-info"></i>
+                  <h5 class="card-title mb-3">Szállítási feltételek</h5>        
+                  <a href="#" class="btn btn-secondary mt-3">Elolvasom</a>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3 col-sm-6"> 
+                <div class="card m-3 p-3">
+                <div class="card-body text-center">
+                  <i class="bi bi-credit-card display-6 mb-3 text-info"></i>
+                  <h5 class="card-title mb-3">Fizetési feltételek</h5>        
+                  <a href="#" class="btn btn-secondary mt-3">Elolvasom</a>
+                </div>
+              </div></div>
+              <div class="col-lg-3 col-sm-6"> 
+                <div class="card m-3 p-3">
+                <div class="card-body text-center">
+                  <i class="bi bi-shield-check display-6 mb-3 text-info"></i>
+                  <h5 class="card-title mb-3">Biztonságos vásárlás</h5>        
+                  <a href="#" class="btn btn-secondary mt-3">Elolvasom</a>
+                </div>
+              </div></div>
+              <div class="col-lg-3 col-sm-6"> 
+                <div class="card m-3 p-3 ">
+                <div class="card-body text-center">
+                  <i class="bi bi-file-earmark-check display-6 mb-3 text-info"></i>
+                  <h5 class="card-title mb-3">Vásárlási feltételek</h5>        
+                  <a href="#" class="btn btn-secondary mt-3">Elolvasom</a>
+                </div>
+              </div></div>
+            </div>
+          </div>
+        </div>
       </div>
     
+    <footer class="border-top mt-5 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h5 class="mt-5 mb-3 text-info fs-4">Ügyfélszolgálati és átvételi pont</h5>
+            <p class="text-info fs-4">Webshop Kft.</p>
+            <p class="text-secondary fs-5">1111 Budapest, Fő utca 2</p>
+            <p class="text-secondary fs-5">info@webshop.hu</p>
+            <p class="text-secondary fs-5">+36 20 222 3333</p>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="mt-5 mb-3 text-info fs-4">Információ</h5>
+            <p ><a href="" class="text-decoration-none text-secondary fs-5">Szállítási információk</a></p>
+            <p><a href="" class="text-decoration-none text-secondary fs-5">Fizetési információk</a></p>
+            <p ><a href="" class="text-decoration-none text-secondary fs-5">Biztonságos vásárlás</a></p>
+            <p><a href="" class="text-decoration-none text-secondary fs-5">Vásárlási feltételek</a></p>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="mt-5 mb-3 text-info fs-4">Népszerű Kategóriák</h5>
+            <p><a href="" class="text-decoration-none text-secondary fs-5">Hangszóró</a></p>
+            <p><a href="" class="text-decoration-none text-secondary fs-5">Monitor</a></p>
+            <p><a href="" class="text-decoration-none text-secondary fs-5">Laptop</a></p>
+            <p><a href="" class="text-decoration-none text-secondary fs-5">Konzol</a></p>
+
+          </div>
+        </div>
+      </div>
+
+    </footer>
 
     
    
