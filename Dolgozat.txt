@@ -1,0 +1,9 @@
+1.Melyik részben vannak a meta információk?
+2.Mit jelent, hogy meta adatok?
+3.Írj le mindent amit a címsorokról tudsz.
+4.Melyik az a tag amivel kitudnád vastagítani az adott szövegrészt szemantikusan?
+5.Melyik tag-al lehetne felső indexet készíteni?
+6.Mi a különbség a blokkszintű elemek és az inline elemek között?
+7.Sorold fel mik a layout elemek.
+8.Melyik az a tag ami közé a dokumentum látható tartalma kerül?
+9.Melyik tag-al tudnánk NEM szemantikusan dölté tenni az adott részt? 
