@@ -1,12 +1,54 @@
-#content{
-	
+#content {}
+
+#imageright {
+    float: right;
+    margin-left: 20px;
 }
-#imageright{
-	
+
+#imageleft {
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 80px;
+
 }
-#imageleft{
-	
+
+.kepszoveg {
+    font-weight: bold;
+    font-style: italic;
 }
-.kepszoveg{
-	
+
+.zengo {
+    text-decoration: none;
+}
+
+#cim {
+    color: forestgreen;
+    text-transform: uppercase;
+
+}
+
+#szamozott {
+    text-align: justify;
+}
+
+a:link,
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+.firstline {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.container {
+    background-color: lightyellow;
+    width: 100%;
+    height: 1200px;
+    margin: 20px 40px 20px 40px;
+
 }
