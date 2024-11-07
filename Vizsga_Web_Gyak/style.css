@@ -42,3 +42,17 @@ p {
 .kep_meret {
     text-align: center;
 }
+
+caption {
+    caption-side: top;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+
+}
