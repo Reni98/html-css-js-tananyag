@@ -1,0 +1,54 @@
+
+body{
+    background-image: url(./kepek/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+section{
+    background-color: rgba(102, 102, 99, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    color: white;
+}
+
+h1,h2{
+    text-align: center;
+    
+}
+
+.figkep{
+    width: 360px;
+    height: 220px;
+    box-shadow: 0 4px 8px 4px rgba(233, 233, 232, 0.5);
+}
+
+figure{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+.jellemzo{
+    margin-top: 70px;
+}
+
+.jellemzo_szoveg{
+    text-align: justify;
+}
+
+caption{
+    caption-side: top;
+  
+}
+
+footer{
+    background-color: lightgray;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
