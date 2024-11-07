@@ -1,0 +1,50 @@
+.card_kepek {
+    height: 350px;
+
+}
+
+.epizod_kep {
+    width: 240px;
+    height: 320px;
+}
+
+.kep_epizod {
+    text-align: center;
+}
+
+.epizodok {
+    background-color: lightslategrey;
+    margin: 20px 0 20px 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+caption {
+    caption-side: top;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.szereplo {
+    width: 200px;
+}
+
+.hivatkozas {
+    text-decoration: none;
+    color: red;
+
+}
+
+footer {
+    background-color: dimgray;
+    text-align: center;
+    padding: 5;
+}
