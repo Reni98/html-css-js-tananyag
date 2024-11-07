@@ -1,0 +1,44 @@
+body {
+    background-image: url(./kepek/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+section {
+    background-color: rgba(237, 233, 253, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.kutya_kep {
+    width: 350px;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+figure {
+    text-align: center;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.hivatkozas {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.meret_kep {
+    width: 200px;
+}
+
+.kep_meret {
+    text-align: center;
+}
