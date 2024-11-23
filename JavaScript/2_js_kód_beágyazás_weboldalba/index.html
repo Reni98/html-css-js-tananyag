@@ -1,0 +1,105 @@
+<!-- A JavaScript beágyazása egy weboldalba különböző módokon történhet. A leggyakoribb módszerek a következő: -->
+
+<!-- 
+Inline JavaScript: A JavaScript kód közvetlenül a HTML elemekben helyezkedik el.
+Internal JavaScript: A JavaScript kód a HTML dokumentum <script> tagjei között található.
+External JavaScript: A JavaScript kód egy külön fájlban található, amelyet a HTML dokumentum betölt. 
+-->
+
+
+<!-- 1. Inline JavaScript
+Az inline JavaScript közvetlenül a HTML elemekben van elhelyezve. Ez a módszer általában kisebb kódrészletekhez használatos.
+Példa:
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline JavaScript Example</title>
+</head>
+<body>
+    <button onclick="alert('Button clicked!')">Click me</button>
+</body>
+</html>
+
+<!-- Ebben a példában, amikor a felhasználó rákattint a gombra, egy JavaScript alert függvény fut le, amely egy üzenetet jelenít meg. -->
+
+<!-- 2. Internal JavaScript
+Az internal JavaScript kód a HTML dokumentum <script> tagjei között helyezkedik el, általában a <head> vagy a <body> részben.
+Példa: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal JavaScript Example</title>
+    <script>
+        function showMessage() {
+            alert('Hello, this is an internal JavaScript example!');
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showMessage()">Click me</button>
+</body>
+</html>
+
+<!-- Ebben a példában a JavaScript kód a <script> tagben van, és a showMessage függvény akkor fut le, amikor a felhasználó rákattint a gombra. -->
+
+
+<!-- 3. External JavaScript
+Az external JavaScript kód egy külön .js fájlban található, amelyet a HTML dokumentumhoz csatolunk. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>External JavaScript Example</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <button onclick="showMessage()">Click me</button>
+</body>
+</html> -->
+
+<!-- Ebben a példában a HTML fájlban csak a <script> tag van, amely a script.js fájlra hivatkozik. A JavaScript kód a külön fájlban van, és a showMessage függvény akkor fut le, amikor a felhasználó rákattint a gombra. -->
+
+    <!-- Magyarázat
+    Inline JavaScript: Gyors és egyszerű módszer kisebb kódrészletekhez, de nehezen karbantartható nagyobb projekteknél.
+    Internal JavaScript: Közepes méretű projektekhez megfelelő, ahol a JavaScript kód könnyen áttekinthető a HTML dokumentumon belül.
+    External JavaScript: A legjobb gyakorlat nagyobb projekteknél, mivel a kód külön fájlban van, amelyet több HTML fájl is használhat. Ez jobb szervezést és karbantarthatóságot tesz lehetővé.
+
+    Az external JavaScript használata különösen hasznos, mert:
+    
+    A kód újrahasznosítható több oldalon is.
+    Könnyebben karbantartható és áttekinthető.
+    A böngészők a JavaScript fájlokat cache-lik, ami gyorsabb betöltési időt eredményez. -->
+
+    <!-- cache: azt jelenti, hogy a böngészők egy időre elmentik a letöltött JavaScript fájlokat (és más erőforrásokat, például képeket, CSS fájlokat) a saját gyorsítótárukba (cache-be). Ennek az a célja, hogy ha a felhasználó újra megnyitja az oldalt vagy egy másik oldalt, amely ugyanazokat az erőforrásokat használja, akkor a böngésző ne töltse le őket újra a szerverről, hanem a gyorsítótárból használja őket. Ez jelentősen gyorsítja az oldal betöltési idejét és csökkenti a szerver terhelését. -->
+
+    <!-- Előnyök
+    Gyorsabb betöltési idő: Mivel az erőforrások már elérhetők a böngésző gyorsítótárában, az oldal gyorsabban betöltődik.
+    Kisebb szerverterhelés: Kevesebb kérés érkezik a szerverhez, mivel a böngésző a gyorsítótárból használja az erőforrásokat.
+    Kisebb adatforgalom: Kevesebb adatot kell újra letölteni, ami különösen fontos lehet mobil adatkapcsolat esetén.
+    Példa
+    Tegyük fel, hogy van egy JavaScript fájlunk (index.js), amelyet egy HTML oldal használ: -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cache Example</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
+
+
+<!-- Mi történik az első látogatáskor?
+A böngésző letölti a index.js fájlt a szerverről.
+Az index.js fájl a böngésző gyorsítótárába kerül.
+Mi történik a későbbi látogatásokkor?
+A böngésző ellenőrzi, hogy az index.js fájl elérhető-e a gyorsítótárban.
+Ha a fájl megtalálható a gyorsítótárban, a böngésző innen tölti be, nem a szerverről. -->
+
+<!-- Összefoglalva, a gyorsítótárazás (cache-elés) egy hatékony módszer arra, hogy az oldalak gyorsabban töltődjenek be, és csökkentse a szerverek terhelését, mivel a böngészők a már letöltött erőforrásokat ideiglenesen tárolják és újrahasznosítják. -->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>External JavaScript Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <button id="myButton">Click me</button>
+</body>
+</html>
+
+<!-- Ebben a példában:
+Az external JavaScript fájl használja a DOMContentLoaded eseményt, hogy biztosítsa, hogy a DOM teljesen betöltődött, mielőtt hozzáadja az eseménykezelőt a gombhoz.
+Az external CSS fájl egyszerű stílusokat tartalmaz a HTML elemek formázásához. -->
+
+
+<!-- A DOM (Document Object Model) egy programozási interfész, amely lehetővé teszi a HTML és XML dokumentumok szerkezetének, stílusának és tartalmának dinamikus hozzáférését és manipulálását. A DOM egy fához hasonló struktúrában reprezentálja a dokumentumot, ahol minden elem és attribútum csomópontként (node) jelenik meg. -->
+
+<!-- A programozási interfész (API, Application Programming Interface) egy olyan eszközkészlet, amely lehetővé teszi a fejlesztők számára, hogy programozott módon hozzáférjenek egy szolgáltatás, alkalmazás vagy rendszer funkcióihoz és adataihoz. Az API-k meghatározott szabályok és protokollok gyűjteményei, amelyek leírják, hogyan lehet kommunikálni és együttműködni a rendszer különböző komponenseivel. -->
+
+
+<!-- DOM jelentősége és működése
+Struktúra: A DOM a HTML dokumentumot egy fa struktúraként képzeli el, ahol a gyökér (root) elem az <html> tag, és ennek gyermekelemei a <head> és <body>, stb. Minden elem, attribútum és szöveges tartalom csomópontként (node) jelenik meg ebben a fában.
+Interakció: JavaScript segítségével programozottan hozzáférhetünk ehhez a struktúrához, és módosíthatjuk azt. Például hozzáadhatunk új elemeket, törölhetünk meglévőket, vagy megváltoztathatjuk az elemek tartalmát és stílusát.
+
+
+DOMContentLoaded esemény
+A DOMContentLoaded esemény akkor következik be, amikor az HTML dokumentum teljesen betöltődött és feldolgozásra került, de a stíluslapok, képek és alkeretek (iframe) még nem feltétlenül töltődtek be. Ez különösen hasznos lehet, mert lehetővé teszi, hogy JavaScript kódunk hozzáférjen és manipulálja a DOM elemeit anélkül, hogy meg kellene várni az összes erőforrás betöltődését. -->
+

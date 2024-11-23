@@ -1,0 +1,48 @@
+<!-- Külső fájlokat az HTML dokumentumhoz kapcsoljuk egy <script> tag segítségével. Ez a módszer akkor is érvényes, ha például a getElementById vagy bármilyen más DOM manipulációs metódust használunk. -->
+
+    <!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External JavaScript Example</title>
+    <!-- Külső JavaScript fájl csatolása -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="message">Eredeti üzenet</div>
+    <button onclick="changeMessage()">Üzenet megváltoztatása</button>
+</body>
+</html>
+
+
+<!-- Magyarázat
+HTML fájl (index.html):
+
+A <script src="script.js" defer></script> sor csatolja a script.js nevű külső JavaScript fájlt. A defer attribútum biztosítja, hogy a JavaScript kód a HTML dokumentum teljes betöltése után fusson le.
+<body> részében található egy div elem, amely az üzenetet tartalmazza, és egy gomb (<button>), amely az onclick eseménykezelő segítségével meghívja a changeMessage() függvényt. -->
+
+<!-- A defer Attribútum 
+
+Elhalasztott Végrehajtás:
+A defer attribútum biztosítja, hogy a JavaScript kód csak akkor hajtódjon végre, amikor a HTML dokumentum teljesen befejezte a betöltést. Ez azt jelenti, hogy az összes HTML elem már rendelkezésre áll, amikor a JavaScript kód fut.
+
+Betöltési Sorrend:
+Ha több szkript is rendelkezik defer attribútummal, akkor azok a megjelenésük sorrendjében töltődnek be és hajtódnak végre.
+
+Nincs Felesleges Blokkolás:
+A defer attribútum használatával elkerülhető, hogy a böngésző megállítsa a HTML elemzést, amíg a JavaScript fájl betöltődik és végrehajtódik. Ez gyorsabb oldalbetöltést eredményez. -->
+
+<!-- 
+Miért Hasznos a defer Attribútum?
+Gyorsabb Oldalbetöltés:
+A HTML dokumentum gyorsabban betöltődik és jelenik meg a felhasználó számára, mivel a JavaScript fájlok betöltése és végrehajtása nem blokkolja a HTML elemzést.
+
+Jobb Felhasználói Élmény:
+Mivel a JavaScript csak akkor hajtódik végre, amikor az összes HTML elem már rendelkezésre áll, elkerülhetők az olyan hibák, amelyek abból adódnak, hogy a JavaScript kód megpróbál manipulálni még nem létező HTML elemeket.
+
+Egyszerűbb Hibakeresés:
+Mivel a JavaScript csak a HTML teljes betöltése után fut le, könnyebb megérteni és követni a kód futását és interakcióját a HTML elemekkel.
+
+Összefoglalva
+A defer attribútum egy hasznos eszköz a webfejlesztők számára, amely lehetővé teszi a külső JavaScript fájlok betöltésének és végrehajtásának optimalizálását. Ez javítja az oldal betöltési sebességét és a felhasználói élményt azáltal, hogy biztosítja, hogy a JavaScript kód csak akkor fusson le, amikor a HTML dokumentum teljesen betöltődött. -->
